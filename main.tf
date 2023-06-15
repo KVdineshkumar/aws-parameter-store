@@ -13,7 +13,6 @@ variable "params" {
     { name = "roboshop.dev.frontend.payment", value = "http://payment-dev,devopsd73.store", type = "String"},
 
 
-    { name = "demo2", value = "demo2", type = "String"},
 
   ]
 }
