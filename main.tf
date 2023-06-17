@@ -11,6 +11,8 @@ variable "params" {
 
     { name = "roboshop.dev.frontend.cart_url", value = "http://cart-dev,devopsd73.store", type = "String"},
     { name = "roboshop.dev.frontend.payment_url", value = "http://payment-dev,devopsd73.store", type = "String"},
+    { name = "roboshop.dev.frontend.shipping_url", value = "http://payment-dev,devopsd73.store", type = "String"},
+
 
 
 
