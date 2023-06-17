@@ -1,6 +1,3 @@
-ines (33 sloc)  2.66 KB
-
-
 resource "aws_ssm_parameter" "params" {
 count = length(var.params)
 name  = var.params[count.index].name
