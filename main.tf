@@ -16,7 +16,7 @@ default = [
 { name = "roboshop.dev.cart.catalogue_host", value = "catalogue-dev.devopsd73.store", type = "String" },
 { name = "roboshop.dev.cart.catalogue_port", value = "8080", type = "String" },
 { name = "roboshop.dev.catalogue.mongo", value = "true", type = "String" },
-{ name = "roboshop.dev.catalogue.mongo_url", value = "mongodb://mongodb-dev.devopsd73.store.online:27017/catalogue", type = "String" },
+{ name = "roboshop.dev.catalogue.mongo_url", value = "mongodb://mongodb-dev.devopsd73.store:27017/catalogue", type = "String" },
 { name = "roboshop.dev.payment.cart_host", value = "cart-dev.devopsd73.store", type = "String" },
 { name = "roboshop.dev.payment.cart_port", value = "8080", type = "String" },
 { name = "roboshop.dev.payment.user_host", value = "user-dev.devopsd73.store", type = "String" },
