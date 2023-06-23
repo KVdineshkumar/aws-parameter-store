@@ -7,6 +7,7 @@ value = var.params[count.index].value
 
 variable "params" {
 default = [
+
   { name = "roboshop.dev.frontend.catalogue_url", value = "http://catalogue-dev.devopsd73.store:8080/", type = "String" },
   { name = "roboshop.dev.frontend.user_url", value = "http://user-dev.devopsd73.store:8080/", type = "String" },
   { name = "roboshop.dev.frontend.cart_url", value = "http://cart-dev.devopsd73.store:8080/", type = "String" },
