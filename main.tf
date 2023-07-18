@@ -4,10 +4,8 @@ name  = var.params[count.index].name
 type  = var.params[count.index].type
 value = var.params[count.index].value
 }
-
 variable "params" {
 default = [
-
   { name = "roboshop.dev.frontend.catalogue_url", value = "http://catalogue-dev.devopsd73.store:8080/", type = "String" },
   { name = "roboshop.dev.frontend.user_url", value = "http://user-dev.devopsd73.store:8080/", type = "String" },
   { name = "roboshop.dev.frontend.cart_url", value = "http://cart-dev.devopsd73.store:8080/", type = "String" },
@@ -31,10 +29,13 @@ default = [
   { name = "roboshop.dev.user.mongo_url", value = "mongodb://mongodb-dev.devopsd73.store:27017/users", type = "String" },
   { name = "roboshop.dev.mysql.username", value = "roboshop123", type = "String" },
   { name = "roboshop.dev.rabbitmq.amqp_user", value = "roboshop", type = "String" },
-### Passwords will be never part of git repos, Usually in organizations we create them nanually. Meaning whom ever have access they will provision these secrets in parameter store.
-{ name = "roboshop.dev.payment.amqp_pass", value = "roboshop123", type = "SecureString" },
+  { name = "roboshop.dev.mysql.username", value = "roboshop", type = "String" },
   { name = "roboshop.dev.rabbitmq.amqp_user", value = "roboshop", type = "String" },
+
+  ### Passwords will be never part of git repos, Usually in organizations we create them nanually. Meaning whom ever have access they will provision these secrets in parameter store.
+  { name = "roboshop.dev.payment.amqp_pass", value = "roboshop123", type = "SecureString" },
   { name = "roboshop.dev.rabbitmq.amqp_pass", value = "roboshop123", type = "SecureString" },
+  { name = "roboshop.dev.mysql.password", value = "roboshop123", type = "SecureString" },
 
 
 ]
