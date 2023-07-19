@@ -1,8 +1,12 @@
 resource "aws_ssm_parameter" "params" {
-count = length(var.params)
-name  = var.params[count.index].name
-type  = var.params[count.index].type
-value = var.params[count.index].value
+
+  count = length(var.params)
+  name  = var.params[count.index].name
+  type  = var.params[count.index].type
+  value = var.params[count.index].value
+  overwrite = true
+  key_id = "f437aee2-3529-4431-9c1b-3492cba74634"
+
 }
 variable "params" {
 default = [
